@@ -104,25 +104,16 @@ p {
 .pagos {
   background-color: #970747;
   color: #fff;
-  height: 200px;
-  max-height: 300px;
   margin: 2rem 0;
   padding: 3rem;
 }
 .contenedor-pagos {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
   height: 100%;
   width: 100%;
 }
-.card-pagos {
-  width: 80%;
-  text-align: center;
-  border-left: 1.5px solid #333;
-}
-.card-pagos:first-child {
-  border: none;
-}
+
 .imagen-pagos {
   margin: 1rem 0;
   width: 5rem;
@@ -133,6 +124,25 @@ p {
 }
 .parrafo-pagos {
   font-weight: bold;
+}
+.card-pagos {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contenedor-pagos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card-pagos {
+    width: 100%;
+    text-align: center;
+    border-left: 1.5px solid #333;
+  }
+  .card-pagos:first-child {
+    border: none;
+  }
 }
 
 /* seccion productos */
@@ -196,15 +206,7 @@ footer a {
 .footer {
   background-color: #970747;
   color: #fff;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contenedor-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  height: 55rem;
 }
 
 .titulo-footer {
@@ -220,18 +222,39 @@ footer a {
   height: 20px;
 }
 
+.mail {
+  text-transform: lowercase;
+}
+
 .footer-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.mail {
-  text-transform: lowercase;
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .contenedor {
     width: 80%;
   }
+}
+@media (min-width: 768px) {
+  .contenedor-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .footer {
+  height: auto;
+}
 }
