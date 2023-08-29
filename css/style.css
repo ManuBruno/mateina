@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --fuentePrincipal: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuentePrincipal);
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+h4 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+
+/* Header */
+.contenedor {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navegacion {
+  font-size: 1.5rem;
+}
+
+.navegacion a {
+  color: #333;
+}
+
+.imagen-logo {
+  width: 10rem;
+}
+
+.lista {
+  text-transform: uppercase;
+  display: flex;
+  gap: 5rem;
+}
+.main {
+  margin-top: 3rem;
+}
+
+.main-imagen {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+/* seccion pagos */
+.pagos {
+  background-color: #970747;
+  color: #fff;
+  height: 200px;
+  max-height: 300px;
+  margin: 2rem 0;
+  padding: 3rem;
+}
+.contenedor-pagos {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.card-pagos {
+  width: 80%;
+  text-align: center;
+  border-left: 1.5px solid #333;
+}
+.card-pagos:first-child {
+  border: none;
+}
+.imagen-pagos {
+  margin: 1rem 0;
+  width: 5rem;
+}
+
+.pagos-titulo {
+  margin: 1rem;
+}
+.parrafo-pagos {
+  font-weight: bold;
+}
+
+/* seccion productos */
+.productos {
+  margin: 5rem 0;
+}
+
+.productos-titulo {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.ultimos-ingresos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 1px #0000002e;
+}
+.imagen-card {
+  width: 20rem;
+}
+.titulo-producto {
+  padding: 1.5rem;
+}
+.precio-producto {
+  padding-bottom: 1.5rem;
+}
+
+.boton-carrito {
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #ffffff6f;
+  background-color: #970748;
+}
+.boton-carrito:hover {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    width: 80%;
+  }
+}
