@@ -60,7 +60,7 @@ p {
   margin: 0;
 }
 
-/* Header */
+/* ------------------- HEADER ------------------- */
 .contenedor {
   width: 100%;
   margin: 0 auto;
@@ -100,7 +100,7 @@ p {
   object-fit: cover;
 }
 
-/* seccion pagos */
+/* ------------------- PAGOS Y ENVIOS ------------------- */
 .pagos {
   background-color: #970747;
   color: #fff;
@@ -145,7 +145,7 @@ p {
   }
 }
 
-/* seccion productos */
+/* ------------------- ULTIMOS INGRESOS ------------------- */
 .productos {
   margin: 5rem 0;
 }
@@ -198,6 +198,25 @@ p {
   color: #ffffff;
   cursor: pointer;
 }
+
+.categorias-imagen {
+  max-width: 100%;
+}
+
+.contenedor-categorias {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .contenedor-categorias {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 1200px;
+  }
+}
+ {
+}
+
+/* -------------------FOOTER------------------- */
 
 footer a {
   color: #fff;
@@ -255,6 +274,6 @@ footer {
     align-items: flex-start;
   }
   .footer {
-  height: auto;
-}
+    height: auto;
+  }
 }
