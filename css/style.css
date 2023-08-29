@@ -183,6 +183,42 @@ p {
   cursor: pointer;
 }
 
+footer a {
+  color: #fff;
+}
+
+.footer {
+  background-color: #970747;
+  color: #fff;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.titulo-footer {
+  padding: 2rem 0 2rem 0rem;
+}
+
+.imagen-footer {
+  width: 50px;
+  height: 30px;
+}
+.footer-redes {
+  width: 30px;
+  height: 20px;
+}
+
+.footer-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 768px) {
   .contenedor {
     width: 80%;
