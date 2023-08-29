@@ -147,8 +147,14 @@ p {
 
 .ultimos-ingresos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  row-gap: 2rem;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .ultimos-ingresos {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+  }
 }
 
 .card {
@@ -217,6 +223,11 @@ footer a {
 .footer-contacto {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.mail {
+  text-transform: lowercase;
 }
 
 @media (min-width: 768px) {
